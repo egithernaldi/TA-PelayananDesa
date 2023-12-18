@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbkg"
+    tools:context=".activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="400dp"
+                android:padding="20dp">
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/login_nik"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/lavender_border"
+                    android:padding="10dp"
+                    android:hint="NIK"
+                    android:drawableLeft="@drawable/baseline_numbers_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp"/>
+
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/login_password"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/lavender_border"
+                    android:padding="10dp"
+                    android:hint="Password"
+                    android:drawableLeft="@drawable/ic_baseline_pass_24"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp"/>
+
+
+                <Button
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/lavender_btn"
+                    android:text="Login"
+                    android:id="@+id/login_button"
+                    android:textSize="25sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signupRedirectText"
+                    android:text="Belum Registrasi? Daftar"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginTop="14dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/lavender"/>
+
+            </LinearLayout>
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pb"
+                android:layout_centerInParent="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/nav_surat">
+
+    <fragment
+        android:id="@+id/nav_surat"
+        android:name="com.example.pelayanandesa.SuratActivity"
+        android:label="fragment_surat_activity"
+        tools:layout="@layout/fragment_surat_activity" />
+    <fragment
+        android:id="@+id/nav_akun"
+        android:name="com.example.pelayanandesa.AkunActivity"
+        android:label="fragment_akun_activity"
+        tools:layout="@layout/fragment_akun_activity" />
+</navigation>
